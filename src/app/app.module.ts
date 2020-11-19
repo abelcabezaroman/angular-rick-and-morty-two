@@ -11,6 +11,7 @@ import { GalleryComponent } from './shared/components/gallery/gallery.component'
 import { CharactersDetailPageComponent } from './pages/characters-page/pages/characters-detail-page/characters-detail-page.component';
 import { ContactPageComponent } from './pages/contact-page/contact-page.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { FavoritesPageComponent } from './pages/favorites-page/favorites-page.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { ReactiveFormsModule } from '@angular/forms';
     GalleryComponent,
     CharactersDetailPageComponent,
     ContactPageComponent,
+    FavoritesPageComponent,
   ],
   imports: [
     BrowserModule,
