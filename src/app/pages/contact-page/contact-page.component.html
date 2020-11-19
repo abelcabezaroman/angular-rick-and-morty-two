@@ -1,0 +1,27 @@
+<form [formGroup]="contactPageForm" (submit)="sendEmail()">
+    <div>
+        <label for="name">Name</label>
+        <input type="text" id="name" formControlName="name">
+        <span *ngIf="submitted && !contactPageForm.get('name').valid">The value of name is required</span>
+    </div>
+
+    <div>
+        <label for="email">Email</label>
+        <input type="email" id="email" formControlName="email">
+        <span *ngIf="submitted && !contactPageForm.get('email').valid">The value of email is required and need to be email format</span>
+    </div>
+
+    <div>
+        <label for="areYouHuman">Are you Human?</label>
+        <input type="checkbox" id="areYouHuman" formControlName="areYouHuman">
+    </div>
+
+    <div>
+        <label for="message">Message</label>
+        <textarea id="message" cols="30" rows="10" formControlName="message"></textarea>
+        <span *ngIf="submitted && !contactPageForm.get('message').valid">The value of message is required and need to be more than 15
+            characters and less than 255</span>
+    </div>
+
+    <input type="submit" value="Enviar">
+</form>

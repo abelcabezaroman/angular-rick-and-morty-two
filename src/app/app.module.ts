@@ -9,6 +9,8 @@ import { CharactersPageComponent } from './pages/characters-page/characters-page
 import { HttpClientModule } from '@angular/common/http';
 import { GalleryComponent } from './shared/components/gallery/gallery.component';
 import { CharactersDetailPageComponent } from './pages/characters-page/pages/characters-detail-page/characters-detail-page.component';
+import { ContactPageComponent } from './pages/contact-page/contact-page.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -18,11 +20,13 @@ import { CharactersDetailPageComponent } from './pages/characters-page/pages/cha
     CharactersPageComponent,
     GalleryComponent,
     CharactersDetailPageComponent,
+    ContactPageComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
