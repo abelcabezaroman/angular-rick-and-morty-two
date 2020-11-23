@@ -9,6 +9,7 @@ import { FavoritesLocalService } from '../../services/local/favorites-local.serv
 export class GalleryComponent implements OnInit {
 
   @Input() galleryList;
+  @Input() url = 'characters';
 
   constructor(private favoritesLocalService: FavoritesLocalService) { }
 

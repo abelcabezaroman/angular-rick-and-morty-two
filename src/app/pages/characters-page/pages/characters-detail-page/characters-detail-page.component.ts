@@ -15,12 +15,11 @@ export class CharactersDetailPageComponent implements OnInit {
 
   ngOnInit(): void {
     this.route.paramMap.subscribe(params => {
-        const id = params.get('id');
+      const id = params.get('id');
 
-        this.charactersService.getCharacter(id).subscribe(character => {
-          this.characterDetail = character;
-        })
-        
+      this.charactersService.getCharacter(id).subscribe(character => {
+        this.characterDetail = character;
+      })
     })
   }
 }

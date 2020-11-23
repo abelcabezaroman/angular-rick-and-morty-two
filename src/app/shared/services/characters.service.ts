@@ -15,4 +15,5 @@ export class CharactersService {
   getCharacter(id){
     return this.http.get('https://rickandmortyapi.com/api/character/' + id);
   }
+  
 }
